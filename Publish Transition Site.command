@@ -18,7 +18,7 @@ git push -u origin main && {
   echo "   repo Settings -> Pages -> Source:"
   echo "   'Deploy from a branch' -> main / (root) -> Save"
   echo " Live once DNS + Pages custom domain are set:"
-  echo "   https://g2026.pcaudit.eu/"
+  echo "   https://g2026.pcaudit.tech/"
   echo "==============================================="
 } || echo ">>> Push failed - screenshot this window for Claude."
 echo
