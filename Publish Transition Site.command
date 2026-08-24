@@ -17,8 +17,8 @@ git push -u origin main && {
   echo " PUSHED. First time? One manual step on GitHub:"
   echo "   repo Settings -> Pages -> Source:"
   echo "   'Deploy from a branch' -> main / (root) -> Save"
-  echo " Live ~1 min later at:"
-  echo "   https://pcaudita.github.io/new2026grading/"
+  echo " Live once DNS + Pages custom domain are set:"
+  echo "   https://g2026.pcaudit.eu/"
   echo "==============================================="
 } || echo ">>> Push failed - screenshot this window for Claude."
 echo
