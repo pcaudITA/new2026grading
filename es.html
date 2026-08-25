@@ -13,6 +13,7 @@
 <style>
 :root{--hover:#f0f5f6;--codebg:#eef3f4;--panel:#f2f6f8;--e:#0c1e2a;--grad:linear-gradient(90deg,#16a394,#4c7fff,#8b5cf6);--navy:#0f3557;--teal:#3b74e8;--ink:#0c1e2a;--mut:#4b5b66;--bg:#f7f9fa;--card:#fff;--line:#e7ecef;--d:#c0392b;--a:#1e8a5b}
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{margin:0;font-family:Inter,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
 .wrap{max-width:980px;margin:0 auto;padding:0 20px}
 .pillwrap{position:sticky;top:12px;z-index:40;padding:0 14px}
@@ -73,6 +74,7 @@ html.dark{--ink:#e6ecf7;--mut:#93a3bb;--bg:#0c1424;--line:#22304d;--card:#121d33
 .thseg{display:flex;border:1.5px solid var(--line);border-radius:9px;overflow:hidden;margin-left:auto}
 .thseg button{background:var(--card);border:0;color:var(--mut);padding:6px 9px;cursor:pointer;font-size:.82rem;line-height:1}
 .thseg button.on{background:var(--ink);color:var(--card)}
+@media(max-width:940px){.card{overflow-x:auto}.ptbar{flex-wrap:wrap}}
 @media(max-width:640px){.hero h1{font-size:1.6rem}}
 @media(max-width:520px){.pill{flex-wrap:wrap;gap:6px}.logo{font-size:.9rem}.logo svg{height:20px}.langs{margin-left:auto}}
 </style>
