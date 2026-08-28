@@ -187,11 +187,11 @@ html.dark{--ink:#e6ecf7;--mut:#93a3bb;--bg:#0c1424;--line:#22304d;--card:#121d33
   <h3>Baterías: ahora una medición</h3>
   <p class="sub" style="margin:0 0 8px">"Batería degradada" era una entrada única. Ahora la batería es una medición, y cada banda es su propio código:</p>
   <ul class="tight">
-   <li><span class="code">BATF1</span> capacidad &ge;80% — un <b>hecho positivo de clase A</b>, ahora parte del registro</li>
+   <li><span class="code">BATF1</span> capacidad &ge;80% — registrado <b>solo en unidades C y D</b> con batería: una señal para reacondicionamiento (batería sana, otros defectos graves)</li>
    <li>capacidad en los 70 — un hecho de clase B; bandas inferiores — clase C, cada una con su código</li>
    <li>no carga, batería no intercambiable — lo que siempre fue en realidad: <span class="chip cD">D</span> crítico</li>
   </ul>
-  <p class="sub" style="margin:10px 0 0"><b>El hábito que cambia:</b> el estado de la batería se registra en <b>cada</b> unidad — siempre. Que el test automático de batería de Aiken dé "pass" <b>no</b> es el registro: el pass solo dice que la unidad superó el umbral. La banda de capacidad recibe igualmente su código, empezando por <span class="code">BATF1</span> para una batería sana. Una batería medida es un hecho que vale dinero — se anota como cualquier otro hecho.</p>
+  <p class="sub" style="margin:10px 0 0"><b>Cómo funciona el registro:</b> las bandas degradadas (&lt;80%) siempre reciben su código, en cada unidad — el pass automático de Aiken no es el registro. La banda sana <span class="code">BATF1</span> se escribe <b>solo en unidades C y D</b> con batería: suelen venderse para reacondicionamiento, y una batería sana es parte de su valor. En unidades A y B no registres nada — <b>sin código de batería significa &ge;80% por definición</b>.</p>
  </div>
 
  <h2 style="margin-top:22px">Fusionados y retirados: el catálogo, modernizado</h2>
@@ -373,7 +373,7 @@ html.dark{--ink:#e6ecf7;--mut:#93a3bb;--bg:#0c1424;--line:#22304d;--card:#121d33
    <li>&#9744; Retira el vocabulario muerto: <span class="strike">243</span>, <span class="strike">308</span>, la familia <span class="strike">GEN*</span>, los códigos de unidades ópticas.</li>
    <li>&#9744; Aprende de memoria las cinco filas de la acumulación — resuelven la mayoría de las unidades.</li>
    <li>&#9744; Las decisiones de frontera son tuyas: juzga la vendibilidad como un comprador. Una breve nota de Aiken en los casos ajustados ayuda a QC.</li>
-   <li>&#9744; Registra la banda de batería en cada unidad — el pass automático de Aiken no es un registro.</li>
+   <li>&#9744; Registra siempre las bandas degradadas; escribe <span class="code">BATF1</span> solo en unidades C/D — en unidades limpias, el silencio significa &ge;80%.</li>
    <li>&#9744; Los puntos miden severidad y deshacen empates — nunca eligen el grado.</li>
    <li>&#9744; Las fotos del Tag son el registro; primeros planos solo para aclarar.</li>
    <li>&#9744; Ante la duda: primero la knowledge base — después tu QC manager.</li>

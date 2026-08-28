@@ -187,11 +187,11 @@ html.dark{--ink:#e6ecf7;--mut:#93a3bb;--bg:#0c1424;--line:#22304d;--card:#121d33
   <h3>Batteries: now a measurement</h3>
   <p class="sub" style="margin:0 0 8px">"Battery health degraded" was a single entry. Now batteries are a measurement, and each band is its own code:</p>
   <ul class="tight">
-   <li><span class="code">BATF1</span> capacity &ge;80% — a <b>positive, A-class fact</b>, now part of the record</li>
+   <li><span class="code">BATF1</span> capacity &ge;80% — recorded <b>only on C and D units</b> with a battery: a refurb signal (healthy battery, other major defects)</li>
    <li>capacity in the 70s — a B-class fact; lower bands — C-class, each coded separately</li>
    <li>not charging, battery unswappable — what it always really was: <span class="chip cD">D</span> critical</li>
   </ul>
-  <p class="sub" style="margin:10px 0 0"><b>The habit that changes:</b> battery health is recorded on <b>every</b> unit — always. Aiken's automatic battery test passing is <b>not</b> the record: the pass only means the unit cleared the threshold. The capacity band still gets its code, starting with <span class="code">BATF1</span> for a healthy battery. A measured battery is a fact worth money — write it down like any other fact.</p>
+  <p class="sub" style="margin:10px 0 0"><b>How the record works:</b> degraded bands (&lt;80%) always get their code, on every unit — Aiken's automatic pass is not the record. The healthy band <span class="code">BATF1</span> is written <b>only on C and D units</b> with a battery: those units often sell for refurbishing, and a good battery is part of their value. On A and B units, record nothing — <b>no battery code means &ge;80% by definition</b>.</p>
  </div>
 
  <h2 style="margin-top:22px">Merged &amp; retired: the catalog, modernized</h2>
@@ -373,7 +373,7 @@ html.dark{--ink:#e6ecf7;--mut:#93a3bb;--bg:#0c1424;--line:#22304d;--card:#121d33
    <li>&#9744; Retire the dead vocabulary: <span class="strike">243</span>, <span class="strike">308</span>, the <span class="strike">GEN*</span> family, the optical-drive codes.</li>
    <li>&#9744; Learn the five accumulation rows cold — they settle most units.</li>
    <li>&#9744; Border calls are yours: judge sellability as a buyer would. A short Aiken note on close calls helps QC.</li>
-   <li>&#9744; Record the battery band on every unit — an automatic Aiken pass is not a record.</li>
+   <li>&#9744; Record degraded battery bands on every unit; write <span class="code">BATF1</span> only on C/D units — on clean units, silence means &ge;80%.</li>
    <li>&#9744; Points gauge severity and break ties — they never pick the grade.</li>
    <li>&#9744; Tag photos are the record; close-ups only to clarify.</li>
    <li>&#9744; In doubt: knowledge base first — then your QC manager.</li>
