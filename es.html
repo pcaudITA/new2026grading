@@ -293,8 +293,8 @@ html.dark{--paper:#121d33;--paperline:#22304d;--ink:#e6ecf7;--mut:#93a3bb;--bg:#
  <div class="card">
   <table>
    <tr><th>Hallazgos</th><th>2023</th><th>G2026</th></tr>
-   <tr><td>Desgaste A, trasera</td><td class="old">sigue A</td><td>sigue A — el micro-desgaste trasero nunca sube el grado, en ninguna cantidad</td></tr>
-   <tr><td>A en el frente</td><td class="old">&times;3 — pasa a B</td><td>&times;4 — pasa a B. Desgaste leve donde mira el usuario, cuatro veces, ya no es "como nuevo"; con tres o menos sigue en A</td></tr>
+   
+   <tr><td>Acumulación de A</td><td class="old">frontal &times;3 — pasa a B; la trasera nunca cuenta</td><td>&times;4 — pasa a B, frontal o trasera por igual; con tres o menos sigue en A. La acumulación es ciega a la posición: frontal o trasera nunca cambian el recuento — la posición ya está valorada en el peso en puntos de cada código.</td></tr>
    <tr><td>Acumulación de B</td><td class="old">&times;3 — mecánicamente C<br><i>nota: "corregir al mejor grado si la impresión general es buena"</i></td><td class="new">&times;4 — la <b>frontera</b> B/C: decide la vendibilidad (con tres B sigue en B). La decisión es del auditor: autónoma, juzgada como lo haría un comprador</td></tr>
    <tr><td>C, en cualquier número</td><td class="old">sigue C</td><td>sigue C — la C nunca se acumula: cinco defectos significativos y uno son ambos C</td></tr>
    <tr><td>una D</td><td class="old">D</td><td>D — con una basta, sea lo que sea lo demás</td></tr>
@@ -308,8 +308,8 @@ html.dark{--paper:#121d33;--paperline:#22304d;--ink:#e6ecf7;--mut:#93a3bb;--bg:#
   <p style="margin:0 0 10px"><b>La unidad:</b> cuatro defectos medios en tapa y reposamanos (clase B cada uno) + los micro-arañazos habituales en la base (desgaste A trasero).</p>
   <table>
    <tr><th></th><th>2023</th><th>G2026</th></tr>
-   <tr><td><b>Desgaste trasero</b></td><td class="old">registrado, ignorado</td><td>registrado, ignorado — igual</td></tr>
-   <tr><td><b>Cuatro B frontales</b></td><td class="old">C mecánica con tres, con la nota aplicada a discreción del auditor</td><td class="new">frontera B/C — el auditor mira la unidad entera como lo haría un comprador</td></tr>
+   <tr><td><b>Micro-arañazos traseros (A)</b></td><td class="old">registrados, ignorados</td><td>registrados — ahora cuentan en el recuento de A, pero muy por debajo de cuatro no cambian nada</td></tr>
+   <tr><td><b>Cuatro B</b></td><td class="old">C mecánica con tres, con la nota aplicada a discreción del auditor</td><td class="new">frontera B/C — el auditor mira la unidad entera como lo haría un comprador</td></tr>
    <tr><td><b>Veredicto</b></td><td class="old">C (típicamente)</td><td class="new">pantalla limpia, teclado sólido, presentable a un brazo de distancia &rarr; <span class="chip cB">B</span>. Realmente cansada &rarr; <span class="chip cC">C</span>. Decide el auditor.</td></tr>
   </table>
   <p class="sub" style="margin:10px 0 0">La misma unidad — pero el lado es ahora una decisión de juicio, no mecánica. Si la decisión está de verdad en equilibrio, los pesos en puntos son el desempate autorizado — y la duda que quede va al manual, después al QC manager.</p>
@@ -371,7 +371,7 @@ html.dark{--paper:#121d33;--paperline:#22304d;--ink:#e6ecf7;--mut:#93a3bb;--bg:#
  <div class="card">
   <ul class="tight">
    <li>&#9744; Retira el vocabulario muerto: <span class="strike">243</span>, <span class="strike">308</span>, la familia <span class="strike">GEN*</span>, los códigos de unidades ópticas.</li>
-   <li>&#9744; Aprende de memoria las cinco filas de la acumulación — resuelven la mayoría de las unidades.</li>
+   <li>&#9744; Aprende de memoria las cuatro filas de la acumulación — ciegas a la posición: clase y recuento, nada más.</li>
    <li>&#9744; Las decisiones de frontera son tuyas: juzga la vendibilidad como un comprador. Una breve nota de Aiken en los casos ajustados ayuda a QC.</li>
    <li>&#9744; Registra siempre las bandas degradadas; escribe <span class="code">BATF1</span> solo en unidades C/D — en unidades limpias, el silencio significa &ge;80%.</li>
    <li>&#9744; Los puntos miden severidad y deshacen empates — nunca eligen el grado.</li>
