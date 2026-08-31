@@ -74,6 +74,8 @@ html.dark{--paper:#121d33;--paperline:#22304d;--ink:#e6ecf7;--mut:#93a3bb;--bg:#
 .thseg{display:flex;border:1.5px solid var(--line);border-radius:9px;overflow:hidden;margin-left:auto}
 .thseg button{background:var(--card);border:0;color:var(--mut);padding:6px 9px;cursor:pointer;font-size:.82rem;line-height:1}
 .thseg button.on{background:var(--ink);color:var(--card)}
+.grid .card{overflow-wrap:anywhere}
+.grid .card div>span{min-width:0}
 @media(max-width:940px){.card{overflow-x:auto}.ptbar{flex-wrap:wrap}}
 @media(max-width:640px){.hero h1{font-size:1.6rem}}
 @media(max-width:520px){.pill{flex-wrap:wrap;gap:6px}.logo{font-size:.9rem}.logo svg{height:20px}.langs{margin-left:auto}}
