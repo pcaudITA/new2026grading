@@ -11,13 +11,13 @@
 <meta name="description" content="What changed from the 2023 audit system to PCaudit G2026: grades, codes, points, logic, photos.">
 <script>document.documentElement.className=localStorage.getItem("pca_theme")||"system";</script>
 <style>
-:root{--paper:#fbfaf6;--paperline:#e9e6dd;--hover:#f0f5f6;--codebg:#eef3f4;--panel:#f2f6f8;--e:#0c1e2a;--grad:linear-gradient(90deg,#16a394,#4c7fff,#8b5cf6);--navy:#0f3557;--teal:#3b74e8;--ink:#0c1e2a;--mut:#4b5b66;--bg:#f7f9fa;--card:#fff;--line:#e7ecef;--d:#c0392b;--a:#1e8a5b}
+:root{--nav:#f2f6fb;--paper:#fbfaf6;--paperline:#e9e6dd;--hover:#f0f5f6;--codebg:#eef3f4;--panel:#f2f6f8;--e:#0c1e2a;--grad:linear-gradient(90deg,#16a394,#4c7fff,#8b5cf6);--navy:#0f3557;--teal:#3b74e8;--ink:#0c1e2a;--mut:#4b5b66;--bg:#f7f9fa;--card:#fff;--line:#e7ecef;--d:#c0392b;--a:#1e8a5b}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{margin:0;font-family:Inter,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
 .wrap{max-width:980px;margin:0 auto;padding:0 20px}
 .pillwrap{position:sticky;top:12px;z-index:40;padding:0 14px}
-.pill{max-width:980px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 28px rgba(23,43,58,.09);display:flex;align-items:center;gap:10px;padding:9px 16px}
+.pill{max-width:980px;margin:0 auto;background:var(--nav);border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 28px rgba(23,43,58,.09);display:flex;align-items:center;gap:10px;padding:9px 16px}
 .logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.02rem;color:var(--ink)}
 .logo svg{height:24px;width:auto;display:block}.logo .lgD{display:none}html.dark .logo .lgL{display:none}html.dark .logo .lgD{display:block}
 .gradtext{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -69,7 +69,7 @@ ul.tight li{margin:5px 0}
 .pt:nth-child(1){background:rgba(30,138,91,.07)}.pt:nth-child(2){background:rgba(0,152,159,.07)}.pt:nth-child(3){background:rgba(201,130,26,.08)}.pt:nth-child(4){background:rgba(192,57,43,.07)}
 .pt b{display:block;font-size:1.15rem}
 .pt span{font-size:.76rem;color:var(--mut)}
-html.dark{--paper:#121d33;--paperline:#22304d;--ink:#e6ecf7;--mut:#93a3bb;--bg:#0c1424;--line:#22304d;--card:#121d33;--hover:#1a2742;--codebg:#1b2946;--panel:#182642;--navy:#3d6ea8;--e:#3a3f4a}
+html.dark{--nav:#141f3a;--paper:#121d33;--paperline:#22304d;--ink:#e6ecf7;--mut:#93a3bb;--bg:#0c1424;--line:#22304d;--card:#121d33;--hover:#1a2742;--codebg:#1b2946;--panel:#182642;--navy:#3d6ea8;--e:#3a3f4a}
 @media (prefers-color-scheme:dark){html.system{--paper:#121d33;--paperline:#22304d;--ink:#e6ecf7;--mut:#93a3bb;--bg:#0c1424;--line:#22304d;--card:#121d33;--hover:#1a2742;--codebg:#1b2946;--panel:#182642;--navy:#3d6ea8;--e:#3a3f4a}}
 .thseg{display:flex;border:1.5px solid var(--line);border-radius:9px;overflow:hidden;margin-left:auto}
 .thseg button{background:var(--card);border:0;color:var(--mut);padding:6px 9px;cursor:pointer;font-size:.82rem;line-height:1}
